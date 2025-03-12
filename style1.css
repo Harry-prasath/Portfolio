@@ -1,0 +1,152 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Young Serif', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Section One - Header */
+.section-one {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.section-one__name {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.section-one__role {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.section-one__contact {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.section-one__contact:hover {
+    background-color: #2980b9;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.contact-form table {
+    width: 100%;
+}
+
+.contact-form table td {
+    padding: 10px 5px;
+    vertical-align: top;
+}
+
+.contact-form table td:first-child {
+    width: 80px;
+    font-weight: bold;
+}
+
+.contact-form__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.contact-form__textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 150px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.contact-form__submit {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.contact-form__submit:hover {
+    background-color: #27ae60;
+}
+
+/* Section Five - Footer */
+.section-five {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.section-five__title {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.section-five__title a {
+    margin-left: 15px;
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.section-five__title a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.section-five__desc {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .contact-form table td {
+        display: block;
+        width: 100%;
+    }
+    
+    .contact-form table td:first-child {
+        padding-bottom: 0;
+    }
+}
